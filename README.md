@@ -38,7 +38,7 @@ node ./index.js start --port <number> --origin <url>
 Example:
 
 ```bash
-node ./index.js start --port 3000 --origin http://dummyjson.com/1
+node ./index.js start --port 3000 --origin http://dummyjson.com
 ```
 
 In this example, the server will start on port `3000` and forward requests to `http://dummyjson.com`.
