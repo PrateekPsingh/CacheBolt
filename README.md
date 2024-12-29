@@ -14,7 +14,7 @@ Before you begin, ensure you have met the following requirements:
 1. Clone the repository:
    ```bash
    git clone https://github.com/iArchitSharma/caching-proxy.git
-   cd caching-proxy
+   cd CacheBolt
    ```
 
 2. Install the node dependencies:
@@ -38,7 +38,7 @@ node ./index.js start --port <number> --origin <url>
 Example:
 
 ```bash
-node ./index.js start --port 3000 --origin http://dummyjson.com
+node ./index.js start --port 3000 --origin http://dummyjson.com/1
 ```
 
 In this example, the server will start on port `3000` and forward requests to `http://dummyjson.com`.
@@ -48,7 +48,7 @@ In this example, the server will start on port `3000` and forward requests to `h
 Use a tool like Postman, Thunder Client, or any API testing tool to send a request to:
 
 ```bash
-http://localhost:3000/products
+http://localhost:3000/products/1
 ```
 
 The first request will be forwarded to the origin server (http://dummyjson.com).
@@ -56,7 +56,7 @@ The first request will be forwarded to the origin server (http://dummyjson.com).
 Send the same request again to:
 
 ```bash
-http://localhost:3000/products
+http://localhost:3000/products/1
 ```
 
 This time, the response will be served from the cache, demonstrating the caching functionality of the proxy server.
